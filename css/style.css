@@ -75,6 +75,13 @@ main {
     border-radius: 0.5rem;
 }
 
+h1 {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+}
+
 h2 {
     font-weight: 700;
     color: var(--primary-color);
@@ -93,11 +100,7 @@ h3 {
     font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-h6 {
-    
-}
-
-h1, h4, h5, h6 {
+h4, h5, h6 {
     color: var(--primary-color);
     font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
@@ -118,6 +121,30 @@ h1, h4, h5, h6 {
     font-weight: 600;
     color: var(--primary-color);
     font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Discipline Columns */
+.discipline-column {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.discipline-icon {
+    color: var(--primary-color);
+    font-size: 46px;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.discipline-column h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.discipline-column p {
+    font-weight: 500;
+    margin: 0;
 }
 
 /* Buttons */
@@ -170,33 +197,60 @@ h1, h4, h5, h6 {
 
 .contact-background {
     background-image: url(../assets/images/contact_background.avif);
-    background-repeat: no-repeat;
-    background-position: top;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 600px; 
+    position: relative;
+}
+
+.parallax-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .index-background {
     background-image: url(../assets/images/index_background.avif);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
-    background-attachment: fixed;
 }
 
-.index-box {
-    padding: 2rem;
-    border-radius: 0.5rem;
+.climbing-background {
+    background-image: url(../assets/images/climbing_background.avif);
+}
+
+.bande-transparente {
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: calc(100% + 2rem); /* Largeur du container + les padding gauche/droite */
+    margin-left: -1rem; /* Compense le padding-left du parent */
+    margin-right: -1rem; /* Compense le padding-right du parent */
 }
 
 .index-box h1 {
-    color: white;
-    text-shadow: 0 0 10px black;    
+    color: rgb(143,143,33);
 }
 
-.index-box h6 {
-    font-weight: 400;
-    font-size: 3rem;
-    text-align: center;
+.index-box p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.help-us {
+    background-color: var(--primary-color);
+}
+
+.help-us p {
+    color: white;
+    font-weight: 600;
+}
+
+.help-us a {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 /* Footer */
@@ -283,6 +337,62 @@ footer hr {
 
 .bg-accent {
     background-color: var(--accent-color);
+}
+
+/* Experience Cards Section */
+.experience-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience-logo {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.experience-logo svg path,
+.experience-logo svg circle,
+.experience-logo svg rect,
+.experience-logo svg g {
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+}
+
+.experience-content {
+    flex-grow: 1;
+}
+
+.experience-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.experience-description {
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Loading and transitions */
