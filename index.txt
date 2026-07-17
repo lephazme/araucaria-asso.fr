@@ -64,7 +64,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="text-uppercase fw-bold mb-4">ARAUCARIA ?</h2>
+                    <h2 class="text-uppercase fw-bold mb-4">ARAUCARIA<br>c'est quoi?</h2>
                     <p class="mb-4">
                         L'Araucaria est un arbre très ancien souvent connu sous le nom de "désespoir du singe".
                         Notre Araucaria, c'est le nouvel espoir du singe, celui qui transforme ce que vous pensez impossible en un possible !
@@ -164,7 +164,7 @@
                     <h6>Contact</h6>
                     <p class="small text-white-50">
                         Email: <a href="mailto:contact@araucaria-asso.fr" class="text-white-50">contact@araucaria-asso.fr</a><br>
-                        Tél: <a href="tel:+33625497824" class="text-white-50">+33 (0)6 25 49 78 24</a>
+                        Tél: +33 (0)6 25 49 78 24
                     </p>
                 </div>
             </div>

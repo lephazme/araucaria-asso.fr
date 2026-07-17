@@ -21,8 +21,6 @@ body {
     background-color: #f8f9fa;
 }
 
-
-
 a {
     transition: all 0.3s ease;
 }
@@ -253,33 +251,6 @@ h4, h5, h6 {
 .help-us a {
     background-color: var(--secondary-color);
     color: white;
-}
-
-.partner-logo {
-    /* Rend l'image parfaitement ronde */
-    border-radius: 50%;
-    
-    /* Crée le contour : 1px d'épaisseur, style solide, couleur gris clair */
-    border: 2px solid #dee2e6;
-    
-    /* Assure que l'image ne soit pas déformée et remplisse bien le cercle */
-    object-fit: cover;
-    
-    /* Optionnel : limite la taille maximale pour que les logos ne soient pas trop gros */
-    max-height: 120px;
-    width: auto;
-    
-    /* Optionnel : ajoute un léger espace en bas si nécessaire */
-    margin-bottom: 1rem;
-    
-    /* Optionnel : effet doux au survol */
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-/* Effet optionnel : la bordure devient plus foncée au survol */
-.partner-logo:hover {
-    border-color: #adb5bd;
-    transform: scale(1.05);
 }
 
 /* Footer */
