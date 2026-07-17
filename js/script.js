@@ -24,25 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handler
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            console.log('Form submitted with data:', data);
-            
-            // Reset form
-            this.reset();
-            
-            // Show success message (you can replace this with actual form submission)
-            alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
-        });
-    }
 
     // Highlight active navigation link
     const currentLocation = location.pathname;

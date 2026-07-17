@@ -91,35 +91,35 @@
 
                     <!-- Right Column : Form -->
                     <div class="col-lg-7">
-                        <form>
+                        <form   action="https://formspree.io/f/mrenplqe" method="POST">
                             <!-- First Name / Last Name Row -->
                             <div class="row g-3 mb-3">
                                 <div class="col-md-6">
                                     <label for="prenom" class="form-label small text-muted">Prénom</label>
-                                    <input type="text" class="form-control" id="prenom">
+                                    <input type="text" class="form-control" id="prenom" name="prenom">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="nom" class="form-label small text-muted">Nom</label>
-                                    <input type="text" class="form-control" id="nom">
+                                    <input type="text" class="form-control" id="nom" name="nom">
                                 </div>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label small text-muted">E-mail <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
 
                             <!-- Message -->
                             <div class="mb-4">
                                 <label for="message" class="form-label small text-muted">Message</label>
-                                <textarea class="form-control" id="message" rows="4"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
                             </div>
 
                             <!-- Submit Button -->
-                            <!--<div class="d-grid">
+                            <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg rounded-pill">Envoyer</button>
-                            </div>-->
+                            </div>
                         </form>
                     </div>
                 </div>
