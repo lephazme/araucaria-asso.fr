@@ -3,13 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Araucaria, association de grimpe d'arbre à Besançon et dans le secteur du Doubs/Jura. Activités sportives, artistiques, scientifiques et culturelles en forêt.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="geo.region" content="FR-25">
+    <meta name="geo.placename" content="Besançon, France">
+    <meta name="geo.position" content="47.2378;6.0243">
+    <link rel="canonical" href="https://araucaria-asso.fr/">
+    <meta property="og:title" content="Araucaria - Grimpe d'arbre à Besançon">
+    <meta property="og:description" content="Association de grimpe d'arbre à Besançon et dans un rayon de 100 km : activités en forêt, inclusivité, découverte de la nature et sensibilisation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://araucaria-asso.fr/">
+    <meta property="og:image" content="https://araucaria-asso.fr/assets/images/logo.avif">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NonprofitOrganization",
+      "name": "Araucaria",
+      "alternateName": "Araucaria - Association de grimpe d'arbre",
+      "url": "https://araucaria-asso.fr/",
+      "logo": "https://araucaria-asso.fr/assets/images/logo.avif",
+      "description": "Araucaria est une association à but non lucratif qui promeut la grimpe d'arbre, la découverte de la nature, l'inclusion et la sensibilisation environnementale autour de Besançon et dans le secteur du Doubs et du Jura.",
+      "email": "contact@araucaria-asso.fr",
+      "telephone": "+33625497824",
+      "foundingDate": "2020",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.2378,
+          "longitude": 6.0243
+        },
+        "geoRadius": "100000"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Besançon",
+        "addressRegion": "Doubs",
+        "postalCode": "25000",
+        "addressCountry": "FR"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61575568070388",
+        "https://www.instagram.com/araucaria.asso/"
+      ],
+      "knowsAbout": [
+        "Grimpe d'arbre",
+        "Nature",
+        "Inclusion",
+        "Pédagogie",
+        "Ateliers scolaires",
+        "Sensibilisation environnementale",
+        "Activités culturelles",
+        "Projets artistiques et scientifiques"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu’est-ce que la grimpe d’arbre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La grimpe d’arbre est une activité qui consiste à monter dans les arbres en sécurité, dans le respect de l’environnement, avec une approche sportive, contemplative, pédagogique et inclusive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Araucaria propose-t-elle des activités pour les scolaires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Araucaria propose des activités et des ateliers pédagogiques autour de la nature, de la forêt, de la biodiversité et de l’environnement, notamment pour les scolaires et les publics de tous horizons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les activités sont-elles accessibles à tous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Araucaria s’inscrit dans une démarche inclusive et sensible aux publics en situation de handicap, aux personnes exclues et à toute personne souhaitant découvrir la nature et la grimpe d’arbre dans un cadre adapté."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Où se trouve Araucaria ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Araucaria est basée à Besançon, en Franche-Comté, et intervient autour de Besançon, dans le Doubs, le Jura et dans un rayon d’environ 100 km."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Araucaria propose-t-elle des activités culturelles ou scientifiques ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, l’association propose des activités et des projets qui combinent sport, nature, culture, science, découverte et sensibilisation environnementale."
+          }
+        }
+      ]
+    }
+    </script>
     <title>Araucaria - Accueil</title>
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Bootstrap 5.3.8 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- Parallax library -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2.1.4/dist/jarallax.min.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!-- Header -->
@@ -46,7 +160,8 @@
 
     <!-- Main Content -->
     <main class="flex-grow-1">
-        <div class="parallax-background index-background">
+        <div class="parallax-background jarallax index-background" data-speed="0.2">
+            <img class="jarallax-img" src="assets/images/index_background.avif" alt="" aria-hidden="true">
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class=" index-box">
@@ -54,7 +169,7 @@
                             <div class="py-5 col-md-5 col-lg-5 mx-auto">
                                 <h1 class="display-5 fw-bold text-center text-uppercase mb-5">Explorez la grimpe d'arbre</h1>
                                 <p class="px-5">Bienvenue chez Araucaria, où nous vous invitons à prendre de la hauteur.
-                                    Cotoyez les cimes avec nos encadrant.es diplomé.es, découvrez ces grands êtres verts qui nous entourent... </p>    
+                                    Côtoyez les cimes, visitez la canopée, découvrez d'un autre regard ces géants verts qui nous entourent... </p>    
                             </div>
                         </div>
                     </div>
@@ -165,6 +280,14 @@
                     <p class="small text-white-50">
                         Tél: <a href="tel:+33625497824" class="text-white-50">+33 (0)6 25 49 78 24</a>
                     </p>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/profile.php?id=61575568070388" class="text-white me-3" style="font-size: 1.5rem; text-decoration: none;" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/araucaria.asso/" class="text-white" style="font-size: 1.5rem; text-decoration: none;" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr class="bg-secondary">
@@ -178,6 +301,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 </html>

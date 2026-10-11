@@ -2,9 +2,6 @@
    Custom Styles for Araucaria
    ============================ */
 
-/* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Lulo+Clean:wght@400;700&display=swap');
-
 :root {
     --primary-color: #E25117;
     --secondary-color: #AFAF26;
@@ -12,15 +9,24 @@
     --orange-color: #AFAF26;
     --link-color: #AFAF26;
     --active-link-color: #E25117;
+    --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* General Styles */
 body {
-    font-family: 'Lulo Clean', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
+    font-weight: 400;
     color: #333;
     background-color: #f8f9fa;
 }
 
+.lead,
+p.lead,
+.lead p,
+.lead li,
+.lead span {
+    font-weight: 300 !important;
+}
 
 
 a {
@@ -55,10 +61,10 @@ header {
 
 .navbar-nav .nav-link {
     margin: 0 1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--link-color) !important;
     transition: color 0.3s ease;
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 .navbar-nav .nav-link:hover {
@@ -78,33 +84,33 @@ main {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
     font-size: 4rem;
 }
 
 h2 {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     border-bottom: 3px solid var(--accent-color);
     padding-bottom: 0.5rem;
     display: inline-block;
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--secondary-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 h4, h5, h6 {
     color: var(--primary-color);
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 /* Cards */
@@ -120,9 +126,9 @@ h4, h5, h6 {
 }
 
 .card-title {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color);
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 /* Discipline Columns */
@@ -145,7 +151,7 @@ h4, h5, h6 {
 }
 
 .discipline-column p {
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -154,7 +160,7 @@ h4, h5, h6 {
     background-color: var(--link-color);
     border-color: var(--link-color);
     color: #000 !important;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -169,7 +175,7 @@ h4, h5, h6 {
     border-width: 2px;
     border-color: var(--link-color);
     color: var(--link-color);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .btn-outline-primary:hover {
@@ -193,7 +199,7 @@ h4, h5, h6 {
 }
 
 .form-label {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--secondary-color);
 }
 
@@ -207,11 +213,34 @@ h4, h5, h6 {
     position: relative;
 }
 
-.parallax-background {
+.jarallax {
+    position: relative;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    min-height: 420px;
+}
+
+.jarallax .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.jarallax > .container,
+.jarallax > .row,
+.jarallax > .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-background {
     position: relative;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -415,7 +444,7 @@ footer hr {
     font-weight: 700;
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
-    font-family: 'lulo-clean-w01-one-bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
 .experience-description {

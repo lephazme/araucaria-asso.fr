@@ -5,6 +5,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Araucaria website loaded');
 
+    if (typeof jarallax !== 'undefined') {
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.2,
+            noAndroid: false,
+            noIos: false
+        });
+    }
+
     // Initialize Bootstrap tooltips
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {

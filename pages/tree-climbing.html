@@ -3,8 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grimpe d'arbre, activités en forêt et projets pédagogiques autour de Besançon. Découvrez nos pratiques, nos valeurs et nos expériences en milieu naturel.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="geo.region" content="FR-25">
+    <meta name="geo.placename" content="Besançon, France">
+    <meta name="geo.position" content="47.2378;6.0243">
+    <link rel="canonical" href="https://araucaria-asso.fr/pages/tree-climbing.html">
+    <meta property="og:title" content="La grimpe d'arbre d'Araucaria">
+    <meta property="og:description" content="Des activités de grimpe d'arbre pour tous, accessibles autour de Besançon et dans un rayon de 100 km.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://araucaria-asso.fr/pages/tree-climbing.html">
+    <meta property="og:image" content="https://araucaria-asso.fr/assets/images/climbing_background.avif">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Grimpe d'arbre - Araucaria",
+      "description": "Activités de grimpe d'arbre, découverte de la nature, pédagogie, inclusion et sensibilisation autour de Besançon et de son territoire.",
+      "url": "https://araucaria-asso.fr/pages/tree-climbing.html",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.2378,
+          "longitude": 6.0243
+        },
+        "geoRadius": "100000"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Besançon",
+        "addressRegion": "Doubs",
+        "postalCode": "25000",
+        "addressCountry": "FR"
+      },
+      "sport": "Tree climbing",
+      "keywords": [
+        "grimpe d'arbre",
+        "nature",
+        "forêt",
+        "ateliers pédagogiques",
+        "inclusion",
+        "Besançon"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "La grimpe d’arbre est-elle une activité sportive ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. La grimpe d’arbre est une pratique sportive, contemplative et technique qui se déroule en forêt et s’appuie sur des installations respectueuses de la biodiversité."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on faire de la grimpe d’arbre en famille ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, Araucaria propose des activités accessibles à de nombreux publics, y compris en famille, selon les conditions de sécurité et le niveau d’initiation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La grimpe d’arbre est-elle compatible avec l’inclusion ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. L’association a une approche inclusive et propose des activités qui s’adaptent aux publics, notamment ceux en situation de handicap ou d’exclusion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le périmètre d’intervention d’Araucaria ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Araucaria intervient principalement autour de Besançon, dans le Doubs et le Jura, ainsi que dans un rayon d’environ 100 km."
+          }
+        }
+      ]
+    }
+    </script>
     <title>Araucaria - La grimpe d'arbre</title>
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Bootstrap 5.3.8 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -12,7 +102,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
     <!-- Custom CSS -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style.min.css" rel="stylesheet">
+
+    <!-- Parallax library -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2.1.4/dist/jarallax.min.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!-- Header -->
@@ -49,7 +142,8 @@
 
     <!-- Main Content -->
     <main class="flex-grow-1">
-        <div class="parallax-background climbing-background">
+        <div class="parallax-background jarallax climbing-background" data-speed="0.2">
+            <img class="jarallax-img" src="../assets/images/climbing_background.avif" alt="" aria-hidden="true">
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class=" index-box">
@@ -77,9 +171,9 @@
             </div>
 
             <!-- Disciplines Section -->
-            <div class="row">
+            <div class="row g-4">
                 <!-- Sportifs -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="discipline-column">
                         <i class="bi bi-person-arms-up discipline-icon"></i>
                         <h3>SPORTIFS</h3>
@@ -88,7 +182,7 @@
                 </div>
 
                 <!-- Artistiques -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="discipline-column">
                         <i class="bi bi-palette discipline-icon"></i>
                         <h3>ARTISTIQUES</h3>
@@ -97,60 +191,56 @@
                 </div>
 
                 <!-- Scientifiques -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="discipline-column">
                         <i class="bi bi-search discipline-icon"></i>
                         <h3>SCIENTIFIQUES</h3>
                         <p>Pour apprendre</p>
                     </div>
                 </div>
+
+                <!-- Culturels -->
+                <div class="col-md-3">
+                    <div class="discipline-column">
+                        <i class="bi bi-people-fill discipline-icon"></i>
+                        <h3>CULTURELS</h3>
+                        <p>Pour se relier à l'Autre</p>
+                    </div>
+                </div>
             </div>
             
             <!-- Accessibility & Inclusivity Section -->
-            <div class="row mt-5 mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="accessibility-section">
-                        <h3 class="text-center cta-banner">Pour les scolaires et pour tout le monde</h3>
-                        
-                        <p class="text-center lead mb-4">nous adaptons nos activités à vous</p>
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <img src="../assets/images/Handi.jpg" alt="Personne en situation de handicap lors d'une activité d'initiation à la grimpe d'arbre" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="text-uppercase mb-3">Pour les scolaires et pour tout le monde</h2>
+                            <p class="lead">Nous adaptons nos activités à vous.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-caret-right-fill me-2"></i>
+                                    <span class="lead">Empêchés ou valides</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-caret-right-fill me-2"></i>
+                                    <span class="lead">Sportifs ou non</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-caret-right-fill me-2"></i>
+                                    <span class="lead">Sensibles au vivant ou pas encore</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-caret-right-fill me-2"></i>
+                                    <span class="lead">À partir de 6 ans</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-                        <!-- Disciplines Section -->
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-unstyled">
-                        <!-- Élément 1 -->
-                        <li class="mb-2 d-flex align-items-center">
-                            <i class="bi bi-caret-right-fill me-2"></i>
-                            <span class="lead">Empêchés ou valides</span>
-                        </li>
-                        
-                        <!-- Élément 2 -->
-                        <li class="mb-2 d-flex align-items-center">
-                            <i class="bi bi-caret-right-fill me-2"></i>
-                            <span class="lead">Sportifs ou non</span>
-                        </li>
-                        
-                        <!-- Élément 3 -->
-                        <li class="mb-2 d-flex align-items-center">
-                            <i class="bi bi-caret-right-fill me-2"></i>
-                            <span class="lead">Sensibles au vivant ou pas encore</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h3 class="cta-banner">Pour toutes et tous</h3>
-                        <p class="text-center lead mt-4 mb-3">à partir de 6 ans</p>
-                    </div>
-                </div>
-            </div>
-            
+            </section>
 
             <!-- Experience Cards Section -->
             <div class="row mt-5">
@@ -246,8 +336,8 @@
                             </svg>
                         </div>
                         <div class="experience-content">
-                            <h4 class="experience-title">Concert enforesté</h4>
-                            <p class="experience-description">Zarba, quatuor de musique des balkans, s'élève dans les airs pour vous proposer "Zarba'rbre", un spectacle musical avec nos stars préférées, les arbres !</p>
+                            <h4 class="experience-title">Art enforesté</h4>
+                            <p class="experience-description">Nous accompagnons des artistes pour leurs projets, musicaux, plastiques, circassiens afin d'amener ensemble l'art jusqu'aux feuilles ! </p>
                         </div>
                     </div>
                 </div>
@@ -319,6 +409,14 @@
                     <p class="small text-white-50">
                         Tél: <a href="tel:+33625497824" class="text-white-50">+33 (0)6 25 49 78 24</a>
                     </p>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/profile.php?id=61575568070388" class="text-white me-3" style="font-size: 1.5rem; text-decoration: none;" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/araucaria.asso/" class="text-white" style="font-size: 1.5rem; text-decoration: none;" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr class="bg-secondary">
@@ -332,6 +430,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JS -->
-    <script src="../js/script.js"></script>
+    <script src="../js/script.min.js"></script>
 </body>
 </html>
